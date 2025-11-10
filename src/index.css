@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --color-black: #222222;
+  --color-black-100: #333;
+  --color-black-200: #444;
+
+
+
+  --color-grey: #6C6C6C;
+  --color-grey-100: #EAEAEA;
+  --color-grey-200: #DCDCDC;
+  --color-grey-300: #D1D1D1;
+  --color-grey-400: #969696;
+  --color-grey-500: #646464;
+  --color-grey-600: #616161;
+  --color-grey-700: #666;
+
+
+  --color-blue: #0635DA;
+
+
+  --color-red: #F66F6F;
+
+  --color-white-100: #f0f0f0;
+
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-pink-gradient: linear-gradient(90deg, #E432B3, #FAA2A2);
+  --bg-blue-gradient: linear-gradient(90deg, #0635DA, #42A5F5);
+  --bg-black-gradient: linear-gradient(90deg, #222222, #444444);
+
+  --text-pink-gradient: linear-gradient(90deg, #E432B3, #FAA2A2);
+  --text-blue-gradient: linear-gradient(90deg, #0635DA, #42A5F5);
+  --text-black-gradient: linear-gradient(90deg, #222222, #444444);
+}
+
+/* Gradient background */
+.bg-pink-gradient {
+  background-image: var(--bg-pink-gradient);
+}
+.bg-blue-gradient {
+  background-image: var(--bg-blue-gradient);
+}
+.bg-black-gradient {
+  background-image: var(--bg-black-gradient);
+}
+
+/* Gradient text */
+.text-pink-gradient {
+  background: var(--text-pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-blue-gradient {
+  background: var(--text-blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-black-gradient {
+  background: var(--text-black-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grey text utility */
+.text-grey-500 {
+  color: var(--grey-500);
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
