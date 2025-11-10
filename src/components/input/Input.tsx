@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import clsx from "clsx";
 import { CircleAlert, Search } from "lucide-react";
 import type { InputHTMLAttributes } from "react";

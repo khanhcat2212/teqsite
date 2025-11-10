@@ -10,22 +10,27 @@
 
   --color-grey: #6C6C6C;
   --color-grey-100: #EAEAEA;
+  --color-grey-150: #EFEFEF;
   --color-grey-200: #DCDCDC;
   --color-grey-300: #D1D1D1;
+  --color-grey-350: #BEBEBE;
   --color-grey-400: #969696;
   --color-grey-500: #646464;
   --color-grey-600: #616161;
   --color-grey-700: #666;
-  --color-grey-800: #888
+  --color-grey-800: #888;
+  --color-grey-900: #F6F6F6;
 
 
-  --color-blue: #0635DA;
+  --color-ocean: #0635DA;
 
 
   --color-red: #F66F6F;
 
   --color-white-100: #f0f0f0;
   --color-white-200: #FAFAFA;
+  --color-white-300: #FCFCFC;
+  --color-white-400: #F9F9F9;
 
 }
 
@@ -73,6 +78,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.border-pink-gradient {
+  border-width: 2px;
+  border-image: linear-gradient(90deg, #E432B3, #FAA2A2) 1;
+  border-style: solid;
+}
+
 
 /* Grey text utility */
 .text-grey-500 {
