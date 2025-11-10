@@ -16,6 +16,9 @@
     "@tailwindcss/vite": "^4.1.17",
     "@tanstack/react-router": "^1.135.0",
     "@tanstack/router-vite-plugin": "^1.135.0",
+    "lucide": "^0.553.0",
+    "lucide-react": "^0.553.0",
+    "postcss": "^8.5.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.17"
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@tailwindcss/postcss": "^4.1.17",
     "@tanstack/router-plugin": "^1.135.0",
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
@@ -30,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "7.15.0",
     "@typescript-eslint/parser": "7.0.0",
     "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
     "eslint": "8.57.0",
     "eslint-config-airbnb-typescript": "18.0.0",
     "eslint-config-prettier": "9.1.0",

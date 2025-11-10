@@ -7,9 +7,7 @@ export const Route = createRootRoute({
 function RootLayout() {
   return (
     <div>
-      <h1>Root Layout</h1>
       <Outlet />
-      <footer>Đang dùng TanStack Router</footer>
     </div>
   );
 }

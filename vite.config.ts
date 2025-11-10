@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// vite.config.ts
+
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
@@ -13,6 +16,13 @@ export default defineConfig({
     }),
     react(),
     tsconfigPaths(),
-    tailwindcss(),
+    tailwindcss({
+      content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+        "./src/_stories_/**/*.{js,ts,jsx,tsx}",
+        "./.ladle/**/*.{js,ts,jsx,tsx}",
+      ],
+    } as any),
   ],
 });
