@@ -1,4 +1,3 @@
-import Footer from "@src/components/layout/Footer";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -8,9 +7,7 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <div className="flex justify-center w-screen">
-        <Footer />
-      </div>
+      <div className="flex justify-center w-screen"></div>
     </>
   );
 }
