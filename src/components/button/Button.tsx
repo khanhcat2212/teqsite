@@ -5,7 +5,7 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: "primary" | "secondary";
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "icon";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -27,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({
     "px-[20px] py-[8px] text-[12px]": size === "sm",
     "px-[24px] py-[10px] text-[14px]": size === "md",
     "px-[28px] py-[12px] text-[16px]": size === "lg",
+    "px-[8px] py-[8px]": size === "icon",
   });
 
   return (

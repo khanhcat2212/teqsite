@@ -17,11 +17,11 @@ const RowCard: React.FC<RowCardProps> = ({
   return (
     <div
       className={clsx(
-        "w-[522px] h-[140px] flex flex-col justify-center px-2 rounded-2xl border border-grey-200 bg-white-200 hover:border-black-200",
+        "max-w-[540px] w-full h-[140px] flex flex-col justify-center px-2 rounded-2xl border border-grey-200 bg-white-200 hover:border-black-200",
         isActive && "border-black-200"
       )}
     >
-      <div className="w-[508px] h-[124px] bg-white flex px-6 items-center gap-5">
+      <div className="max-w-[508px] w-full h-[124px] bg-white flex px-6 items-center gap-5">
         <img src={image} alt="vacancy" className="h-12 w-12 object-cover" />
 
         <div className="flex flex-col gap-2">

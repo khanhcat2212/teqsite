@@ -3,11 +3,21 @@ import clsx from "clsx";
 
 import type { Card } from "@src/interfaces/card";
 
-const ProductCard: React.FC<Card> = ({ image, title, isActive }) => {
+interface ProductCardProps extends Card {
+  onClick?: () => void;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({
+  image,
+  title,
+  isActive,
+  onClick,
+}) => {
   return (
     <div
+      onClick={onClick}
       className={clsx(
-        "w-[180px] h-32 text-grey-400 bg-grey-900 hover:bg-white-300 hover:text-black hover:font-bold flex flex-col items-center justify-center",
+        "w-[180px] h-32 text-grey-400 bg-grey-900 hover:bg-white-300 hover:text-black hover:font-bold flex flex-col items-center justify-center cursor-pointer",
         isActive && "bg-white-300"
       )}
     >

@@ -20,6 +20,7 @@
   --color-grey-700: #666;
   --color-grey-800: #888;
   --color-grey-900: #F6F6F6;
+  --color-grey-950: #F1F1F1;
 
 
   --color-ocean: #0635DA;
@@ -99,4 +100,12 @@ a {
 }
 a:hover {
   color: #535bf2;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
 }
