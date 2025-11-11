@@ -24,10 +24,10 @@ const Button: React.FC<ButtonProps> = ({
   });
 
   const sizeStyle = clsx({
-    "px-[20px] py-[8px] text-[12px]": size === "sm",
-    "px-[24px] py-[10px] text-[14px]": size === "md",
-    "px-[28px] py-[12px] text-[16px]": size === "lg",
-    "px-[8px] py-[8px]": size === "icon",
+    "px-[1.25rem] py-[.5rem] text-[.75rem]": size === "sm",
+    "px-[1.5rem] py-[.625rem] text-[.875rem]": size === "md",
+    "px-[1.75rem] py-[.75rem] text-[1rem]": size === "lg",
+    "px-[.5rem] py-[.5rem]": size === "icon",
   });
 
   return (

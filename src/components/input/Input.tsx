@@ -13,7 +13,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ label, variant = "primary", error, placeholder, className, ...props }) => {
     const baseStyle =
-      "flex items-center rounded-sm text-[14px] border border-grey-100 h-[38px] transition w-full";
+      "flex items-center rounded-sm text-[.875rem] border border-grey-100 h-[2.375rem] transition w-full";
     const variantStyle = clsx({
       "hover:border-black focus-within:border-black": variant === "primary",
       "border border-red": variant === "error",
@@ -24,7 +24,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           <Search className="ml-2 shrink-0 text-black w-4 h-4" />
         )}
         {variant === "secondary" && (
-          <div className="flex h-[37px] px-2 text-grey-400 items-center justify-center bg-white-200 border-r border-grey-100">
+          <div className="flex h-9.25 px-2 text-grey-400 items-center justify-center bg-white-200 border-r border-grey-100">
             {label}
           </div>
         )}

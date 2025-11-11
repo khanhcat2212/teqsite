@@ -20,8 +20,8 @@ const AboutList: React.FC<AboutListProps> = ({ cards, subject, variant }) => {
     <div className="flex flex-col justify-center items-center w-full">
       <div
         className={clsx(
-          "flex flex-col gap-10 w-full max-w-[1080px]",
-          variant === "row" && "max-w-[1104px]"
+          "flex flex-col gap-10 w-full max-w-270",
+          variant === "row" && "max-w-276"
         )}
       >
         {subject && <Subject title={subject} />}

@@ -17,7 +17,7 @@ const CardSlider: React.FC<{ cards: Card[] }> = ({ cards }) => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <div className="relative max-w-[380px] md:max-w-[780px] lg:max-w-[1200px] flex justify-center items-center">
+    <div className="relative max-w-95 md:max-w-195 lg:max-w-300 flex justify-center items-center">
       <Button
         variant="primary"
         size="icon"
@@ -50,10 +50,10 @@ const CardSlider: React.FC<{ cards: Card[] }> = ({ cards }) => {
           renderBullet: (_, className) => {
             return `<span class="${className} md:hidden" style="
                     background-color: #222; 
-                    width: 12px; 
-                    height: 12px; 
-                    margin: 0 4px; 
-                    border-radius: 9999px;">
+                    width: .75rem; 
+                    height: .75rem; 
+                    margin: 0 .25rem; 
+                    border-radius: 624.9375rem;">
                   </span>`;
           },
         }}

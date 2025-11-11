@@ -11,7 +11,7 @@ interface ProductListProps {
 const ProductList: React.FC<ProductListProps> = ({ cards }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   return (
-    <div className="w-full h-[127px] bg-grey-900 border-t-2 border-b-2 border-grey-950 flex items-center justify-center">
+    <div className="w-full h-31.75 bg-grey-900 border-t-2 border-b-2 border-grey-950 flex items-center justify-center">
       <div className="hidden md:flex lg:hidden overflow-x-auto w-full px-2 scrollbar-none">
         {cards.map((card, index) => (
           <div key={index} className="flex-none w-[calc(100%/4)]">

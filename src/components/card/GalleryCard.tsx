@@ -4,10 +4,10 @@ import type { Card } from "@src/interfaces/card";
 
 const GalleryCard: React.FC<Card> = ({ image }) => {
   return (
-    <div className="h-[380px] w-[360px] flex flex-col items-center">
+    <div className="h-95 w-90 flex flex-col items-center">
       <div className="w-80 h-2.5 bg-grey-100" />
-      <div className="w-[340px] h-2.5 bg-grey-350" />
-      <div className="relative w-[360px] h-[360px]">
+      <div className="w-85 h-2.5 bg-grey-350" />
+      <div className="relative w-90 h-90">
         <img
           src={image}
           alt="gallery_image"
