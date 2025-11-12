@@ -4,7 +4,7 @@ import { Outlet } from "@tanstack/react-router";
 
 const RootLayout = () => {
   return (
-    <div className="w-screen min-h-screen flex flex-col justify-between">
+    <div className="w-screen min-h-screen flex flex-col justify-between bg-white-400">
       <Header />
       <main>
         <Outlet />

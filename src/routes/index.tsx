@@ -1,3 +1,4 @@
+import Banner from "@src/feature/home/Banner";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -7,7 +8,9 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <div className="flex justify-center w-screen"></div>
+      <div className="w-screen">
+        <Banner />
+      </div>
     </>
   );
 }
