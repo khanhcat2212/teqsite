@@ -1,6 +1,6 @@
 import type { Card } from "@src/interfaces/card";
 
-export const cards: Card[] = [
+export const solutions: Card[] = [
   {
     title: "Backend",
     description: "Design database, develop API and other backend Services",

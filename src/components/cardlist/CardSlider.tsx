@@ -57,7 +57,7 @@ const CardSlider: React.FC<{ cards: Card[] }> = ({ cards }) => {
                   </span>`;
           },
         }}
-        className="pb-20!"
+        className="pb-16! md:pb-20!"
         breakpoints={{
           0: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
