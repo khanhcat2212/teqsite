@@ -1,5 +1,7 @@
 import AboutUs from "@src/feature/home/AboutUs";
 import Banner from "@src/feature/home/Banner";
+import Hiring from "@src/feature/home/Hiring";
+import News from "@src/feature/home/News";
 import OurPartners from "@src/feature/home/OurPartners";
 import OurProducts from "@src/feature/home/OurProducts";
 import Solutions from "@src/feature/home/Solutions";
@@ -18,6 +20,8 @@ function Home() {
         <AboutUs />
         <OurProducts />
         <OurPartners />
+        <Hiring />
+        <News />
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPartners: React.FC = () => {
   return (
-    <div className="flex pt-16 flex-col items-center">
+    <div className="flex pt-16 pb-20 flex-col items-center">
       <p className="text-[32px] font-bold text-grey-600 text-center">
         our partners
       </p>
