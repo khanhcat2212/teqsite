@@ -9,6 +9,7 @@
 
 
   --color-grey: #6C6C6C;
+  --color-grey-50: #F5F5F5;
   --color-grey-100: #EAEAEA;
   --color-grey-150: #EFEFEF;
   --color-grey-200: #DCDCDC;
@@ -24,7 +25,11 @@
 
 
   --color-ocean: #0635DA;
+  --color-ocean-100: #F5F9FD;
 
+  --color-orange: #FDF8F2;
+
+  --color-pink: #FFF8FB;
 
   --color-red: #F66F6F;
 
@@ -46,10 +51,12 @@
   --bg-pink-gradient: linear-gradient(90deg, #E432B3, #FAA2A2);
   --bg-blue-gradient: linear-gradient(90deg, #0635DA, #42A5F5);
   --bg-black-gradient: linear-gradient(90deg, #222222, #444444);
+  --bg-orange-gradient: linear-gradient(90deg, #FF8400, #F0CE93);
 
   --text-pink-gradient: linear-gradient(90deg, #E432B3, #FAA2A2);
   --text-blue-gradient: linear-gradient(90deg, #0635DA, #42A5F5);
   --text-black-gradient: linear-gradient(90deg, #222222, #444444);
+  --text-orange-gradient: linear-gradient(90deg, #FF8400, #F0CE93);
 }
 
 /* Gradient background */
@@ -61,6 +68,10 @@
 }
 .bg-black-gradient {
   background-image: var(--bg-black-gradient);
+}
+
+.bg-orange-gradient {
+  background-image: var(--bg-orange-gradient);
 }
 
 /* Gradient text */
@@ -80,11 +91,31 @@
   -webkit-text-fill-color: transparent;
 }
 
+.text-orange-gradient {
+  background: var(--text-orange-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .border-pink-gradient {
   border-width: 2px;
   border-image: linear-gradient(90deg, #E432B3, #FAA2A2) 1;
   border-style: solid;
 }
+
+.border-blue-gradient {
+  border-width: 2px;
+  border-image: linear-gradient(90deg, #0052F0, #8BD7FF) 1;
+  border-style: solid;
+}
+
+.border-orange-gradient {
+  border-width: 2px;
+  border-image: linear-gradient(90deg, #FF8400, #F0CE93) 1;
+  border-style: solid;
+}
+
+
 
 
 /* Grey text utility */

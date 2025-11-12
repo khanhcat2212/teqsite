@@ -5,7 +5,7 @@ import { solutions } from "@src/constants/cards";
 
 const Solutions: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 md:gap-11 py-24">
+    <div className="flex flex-col items-center justify-center gap-8 md:gap-11 py-24 px-4">
       <h1 className="text-[24px] md:text-[36px] font-bold leading-0">
         Our Solutions
       </h1>

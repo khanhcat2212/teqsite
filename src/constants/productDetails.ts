@@ -1,46 +1,40 @@
 import type { Card } from "@src/interfaces/card";
 
-export const products: Card[] = [
+export const productDetails: Card[] = [
   {
     title: "Offwork",
-    image: "/products/product_1.svg",
     description:
       "Create and manage mock APIs to develop and test app’s interaction",
-    extendImage: "/productDetails/product_1.svg",
+    image: "/productDetails/product_1.svg",
   },
   {
     title: "AccountsHub",
-    image: "/products/product_2.svg",
     description:
       "Create and manage mock APIs to develop and test app’s interaction",
-    extendImage: "/productDetails/product_2.svg",
+    image: "/productDetails/product_12svg",
   },
   {
     title: "RecruitHub",
-    image: "/products/product_3.svg",
     description:
       "Create and manage mock APIs to develop and test app’s interaction",
-    extendImage: "/productDetails/product_3.svg",
+    image: "/productDetails/product_3.svg",
   },
   {
     title: "Review360",
-    image: "/products/product_4.svg",
     description:
       "Create and manage mock APIs to develop and test app’s interaction",
-    extendImage: "/productDetails/product_4.svg",
+    image: "/productDetails/product_4.svg",
   },
   {
     title: "EazyProcess",
-    image: "/products/product_5.svg",
     description:
       "Create and manage mock APIs to develop and test app’s interaction",
-    extendImage: "/productDetails/product_5.svg",
+    image: "/productDetails/product_5.svg",
   },
   {
     title: "EazyMock",
-    image: "/products/product_6.svg",
     description:
       "Create and manage mock APIs to develop and test app’s interaction",
-    extendImage: "/productDetails/product_6.svg",
+    image: "/productDetails/product_6.svg",
   },
 ];

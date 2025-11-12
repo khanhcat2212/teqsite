@@ -1,4 +1,7 @@
+import AboutUs from "@src/feature/home/AboutUs";
 import Banner from "@src/feature/home/Banner";
+import OurPartners from "@src/feature/home/OurPartners";
+import OurProducts from "@src/feature/home/OurProducts";
 import Solutions from "@src/feature/home/Solutions";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -12,6 +15,9 @@ function Home() {
       <div className="w-screen">
         <Banner />
         <Solutions />
+        <AboutUs />
+        <OurProducts />
+        <OurPartners />
       </div>
     </>
   );
