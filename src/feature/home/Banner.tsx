@@ -10,7 +10,7 @@ const Banner: React.FC = () => {
       <div className="flex flex-col w-full">
         <div className="h-fit flex flex-col items-center">
           <div className="relative h-70 lg:h-42 flex items-center lg:items-end">
-            <h1 className="hidden lg:block text-[40px] font-bold mb-4.5">
+            <h1 className="hidden lg:block text-[2.5rem] font-bold mb-4.5">
               Elevate Your
               <span className="inline-block py-0 leading-none bg-black text-white mx-3">
                 Business
@@ -19,7 +19,7 @@ const Banner: React.FC = () => {
             </h1>
 
             <div className="flex flex-col items-center md:justify-end lg:hidden gap-4">
-              <div className="flex flex-col items-center gap-0 text-[24px] md:text-[40px] font-bold">
+              <div className="flex flex-col items-center gap-0 text-[1.5rem] md:text-[2.5rem] font-bold">
                 <p>
                   Elevate Your
                   <span className="inline-block py-0 leading-none bg-black text-white mx-1 md:mx-3">

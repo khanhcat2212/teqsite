@@ -15,8 +15,10 @@ const Hiring: React.FC = () => {
   const hirings = vacancies.slice(0, 3);
   return (
     <div className="flex flex-col items-center lg:justify-center border-dashed border-grey-300 border-t border-b py-16">
-      <p className="text-[24px] md:text-[36px] font-bold mb-4">We Are Hiring</p>
-      <p className="text-[16px] md:text-[24px] text-grey-700 mb-7 px-12 text-center">
+      <p className="text-[1.5rem] md:text-[36px] font-bold mb-4">
+        We Are Hiring
+      </p>
+      <p className="text-[1rem] md:text-[24px] text-grey-700 mb-7 px-12 text-center">
         Become a part of our team and build your bright future
       </p>
 
@@ -29,7 +31,7 @@ const Hiring: React.FC = () => {
           <img src="/map.svg" className="w-full object-cover" alt="sample" />
         </div>
 
-        <div className="w-1/2 max-w-[522px] flex flex-col gap-8">
+        <div className="w-1/2 max-w-130.5 flex flex-col gap-8">
           {hirings.map((card, index) => (
             <RowCard key={index} {...card} />
           ))}
@@ -58,7 +60,7 @@ const Hiring: React.FC = () => {
         <Timeline cards={timelines} />
       </div>
 
-      <div className="flex flex-col max-w-[522px] lg:hidden gap-8 px-4">
+      <div className="flex flex-col max-w-130.5 lg:hidden gap-8 px-4">
         {hirings.map((card, index) => (
           <RowCard key={index} {...card} />
         ))}

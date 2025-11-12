@@ -16,7 +16,7 @@ const News: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 md:gap-8 px-4 pt-16 pb-12">
-      <h1 className="text-[24px] md:text-[36px] font-bold leading-0">
+      <h1 className="text-[1.5rem] md:text-[2.25rem] font-bold leading-0">
         Latest News
       </h1>
 
@@ -25,7 +25,7 @@ const News: React.FC = () => {
       </div>
 
       <Button variant="primary" size={isLg ? "lg" : isMd ? "md" : "sm"}>
-        JOIN US
+        READ MORE
       </Button>
     </div>
   );

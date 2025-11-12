@@ -9,7 +9,7 @@ const OurProducts: React.FC = () => {
 
   return (
     <div className="hidden md:flex mt-12 flex-col">
-      <p className="text-[32px] font-bold text-grey-600 text-center">
+      <p className="text-[2rem] font-bold text-grey-600 text-center">
         our products
       </p>
 

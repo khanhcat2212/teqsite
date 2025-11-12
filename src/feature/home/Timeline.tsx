@@ -10,7 +10,7 @@ const Timeline: React.FC<TimelineProps> = ({ cards }) => {
   return (
     <>
       <div className="relative w-full hidden lg:flex flex-col items-center justify-center">
-        <div className="absolute bottom-[45px] left-0 w-full h-0.5 bg-linear-to-r from-gray-200 via-black-100 to-gray-200 z-0"></div>
+        <div className="absolute bottom-11.25 left-0 w-full h-0.5 bg-linear-to-r from-gray-200 via-black-100 to-gray-200 z-0"></div>
 
         <div className="relative w-full flex justify-between px-[5%] max-w-6xl z-10">
           {cards.map((card, index) => (
@@ -40,7 +40,7 @@ const Timeline: React.FC<TimelineProps> = ({ cards }) => {
       </div>
 
       <div className="relative h-[464px] flex lg:hidden flex-col justify-center">
-        <div className="absolute top-0 w-0.5 h-[464px] bg-linear-to-b from-gray-200 via-black-100 to-gray-200 z-0"></div>
+        <div className="absolute top-0 w-0.5 h-116 bg-linear-to-b from-gray-200 via-black-100 to-gray-200 z-0"></div>
 
         <div className="relative flex flex-col gap-12 z-10">
           {cards.map((card, index) => (
@@ -58,7 +58,7 @@ const Timeline: React.FC<TimelineProps> = ({ cards }) => {
               )}
 
               {/* Icon */}
-              <div className="w-[70px] h-[70px] border-2 border-black rounded-full flex items-center justify-center bg-white mt-2">
+              <div className="w-17.5 h-17.5 border-2 border-black rounded-full flex items-center justify-center bg-white mt-2">
                 <img src={card.image} alt={card.title} className="w-6 h-6" />
               </div>
 

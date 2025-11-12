@@ -7,31 +7,31 @@ const AboutUs: React.FC = () => {
         About Us
       </h1>
 
-      <p className="text-center text-[16px] md:text-[24px] text-grey-500 max-w-[80%] lg:max-w-[70%]">
+      <p className="text-center text-[1rem] md:text-[24px] text-grey-500 max-w-[80%] lg:max-w-[70%]">
         Confident and passionate in our capabilities to engineer extraordinary
         products
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 px-8">
-        <div className="w-[146px] md:w-[250px] h-13 md:h-22 rounded-sm p-0.5 bg-pink-gradient flex items-center justify-center">
+        <div className="w-36.5 md:w-62.5 h-13 md:h-22 rounded-sm p-0.5 bg-pink-gradient flex items-center justify-center">
           <div className="w-full h-full bg-pink rounded-xs flex items-center justify-center">
-            <p className="text-[20px] md:text-[32px] font-semibold text-pink-gradient">
+            <p className="text-[1.25rem] md:text-[2rem] font-semibold text-pink-gradient">
               Creativity
             </p>
           </div>
         </div>
 
-        <div className="w-[146px] md:w-[250px] h-13 md:h-22  rounded-sm p-0.5 bg-blue-gradient flex items-center justify-center">
+        <div className="w-36.5 md:w-62.5 h-13 md:h-22  rounded-sm p-0.5 bg-blue-gradient flex items-center justify-center">
           <div className="w-full h-full bg-ocean-100 rounded-xs flex items-center justify-center">
-            <p className="text-[20px] md:text-[32px] font-semibold text-blue-gradient">
+            <p className="text-[1.25rem] md:text-[2rem] font-semibold text-blue-gradient">
               Intellect
             </p>
           </div>
         </div>
 
-        <div className="w-[146px] md:w-[250px] h-13 md:h-22  rounded-sm p-0.5 bg-orange-gradient flex items-center justify-center">
+        <div className="w-36.5 md:w-62.5 h-13 md:h-22  rounded-sm p-0.5 bg-orange-gradient flex items-center justify-center">
           <div className="w-full h-full bg-orange rounded-xs flex items-center justify-center">
-            <p className="text-[20px] md:text-[32px] font-semibold text-orange-gradient">
+            <p className="text-[1.25rem] md:text-[2rem] font-semibold text-orange-gradient">
               Dedication
             </p>
           </div>
