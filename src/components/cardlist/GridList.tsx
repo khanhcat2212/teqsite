@@ -15,7 +15,7 @@ interface AboutListProps {
   variant: "capability" | "team" | "row" | "jd";
 }
 
-const AboutList: React.FC<AboutListProps> = ({ cards, subject, variant }) => {
+const GridList: React.FC<AboutListProps> = ({ cards, subject, variant }) => {
   return (
     <div className="flex flex-col justify-center items-center w-full">
       <div
@@ -49,4 +49,4 @@ const AboutList: React.FC<AboutListProps> = ({ cards, subject, variant }) => {
   );
 };
 
-export default AboutList;
+export default GridList;
