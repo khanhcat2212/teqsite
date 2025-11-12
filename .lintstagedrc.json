@@ -1,0 +1,6 @@
+{
+  "src/**/*.{ts,tsx,js}": [
+    "pnpm format",
+    "eslint --fix"
+  ]
+}
