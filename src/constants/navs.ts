@@ -11,7 +11,7 @@ export const navs: Nav[] = [
   },
   {
     label: "CAREERS",
-    url: "/carrers",
+    url: "/careers",
   },
   {
     label: "NEWS",
