@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantStyle = clsx({
     "bg-black text-white hover:bg-black-200": variant === "primary",
-    "bg-white text-black hover:bg-white-100": variant === "secondary",
+    "text-black hover:bg-white-100": variant === "secondary",
   });
 
   const sizeStyle = clsx({

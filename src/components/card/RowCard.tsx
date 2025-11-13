@@ -2,22 +2,26 @@ import React from "react";
 import clsx from "clsx";
 
 import type { Card } from "@src/interfaces/card";
+import { useNavigate } from "@tanstack/react-router";
 
 interface RowCardProps extends Card {
   variant?: "primary" | "secondary";
 }
 
 const RowCard: React.FC<RowCardProps> = ({
+  id,
   title,
   image,
   description,
   variant,
   isActive,
 }) => {
+  const navigate = useNavigate();
   return (
     <div
+      onClick={() => navigate({ to: `/careers/${id}` })}
       className={clsx(
-        "max-w-135 w-full h-35 flex flex-col justify-center items-center p-2 rounded-2xl border border-grey-200 bg-white-200 hover:border-black-200",
+        "max-w-135 w-full h-35 flex flex-col justify-center items-center p-2 rounded-2xl border border-grey-200 bg-white-200 hover:border-black-200 cursor-pointer",
         isActive && "border-black-200"
       )}
     >

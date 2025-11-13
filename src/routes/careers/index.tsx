@@ -4,7 +4,7 @@ import OurCulture from "@src/feature/careers/OurCulture";
 import Vacancies from "@src/feature/careers/Vacancies";
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/careers")({
+export const Route = createFileRoute("/careers/")({
   component: RouteComponent,
 });
 

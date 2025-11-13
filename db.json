@@ -1,0 +1,254 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Back-end Developer (Golang)",
+      "category": "Engineering",
+      "type": "Full-time",
+      "workplace": "Onsite",
+      "postedDate": "2023-09-30",
+      "description": "Have the chance to work with talented developers, following high-standard software development practices.\n Be trained and worked on complex systems using cutting-edge technology-based frameworks.",
+      "responsibilities": [
+        "Support the development team to develop the application using ReactJS.",
+        "Other tasks assigned by the leader."
+      ],
+      "requirements": {
+        "general": [
+          "4th year/new graduate students majoring in Computer Science/Software Engineering/related fields.",
+          "Be READY to work full-time."
+        ],
+        "skills": [
+          "Know ReactJS, or Redux, Redux-Saga, Webpack, Babel or VueJS, VueX (including university/part-time projects).",
+          "Know UI/UX, and JavaScript frameworks."
+        ]
+      },
+      "benefits": {
+        "compensation": [
+          "Attractive salary and benefits (Salary review - 2 times/year).",
+          "Insurance contribution equal to 100% of salary. Year-end bonus.",
+          "Annual health check for all employees.",
+          "MacBook or personal laptop provided."
+        ],
+        "spiritual": [
+          "Monthly party with food and drink.",
+          "At least 2 trips a year: Team Building, Company Trip, and other big events.",
+          "Free foreign language training: English and Japanese.",
+          "Opportunity to work in Japan.",
+          "Professional, friendly, and open working environment."
+        ]
+      },
+      "workingTime": [
+        "Monday - Friday and the last Saturday of the month, 8:30 - 17:30 (8 hours/day)",
+        "Floor 3 - 5, Waseco Building, No. 10 Pho Quang, Ward 02, Tan Binh District, Ho Chi Minh City"
+      ],
+      "contact": {
+        "email": "mailto:recruit@teqnological.asia"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Bridge Engineer (BrSE/PM/Japanese)",
+      "category": "Engineering / Management",
+      "type": "Full-time",
+      "workplace": "Onsite",
+      "postedDate": "2023-10-10",
+      "description": "Work as a bridge between Vietnamese and Japanese development teams, managing projects and ensuring smooth communication between both sides.",
+      "responsibilities": [
+        "Translate technical documents and communicate requirements between Japanese clients and Vietnamese engineers.",
+        "Manage project progress, quality, and delivery.",
+        "Support PMs and clients in defining requirements and system specifications."
+      ],
+      "requirements": {
+        "general": [
+          "Bachelor’s degree in IT or related fields.",
+          "Japanese language proficiency (JLPT N2 or higher).",
+          "Experience as BrSE or PM in software development projects."
+        ],
+        "skills": [
+          "Excellent communication and project management skills.",
+          "Experience working in Agile/Scrum environments.",
+          "Understanding of both Japanese business culture and software engineering processes."
+        ]
+      },
+      "benefits": {
+        "compensation": [
+          "Competitive salary and performance-based bonuses.",
+          "Health and social insurance according to company policy.",
+          "Language allowance for Japanese proficiency."
+        ],
+        "spiritual": [
+          "Team-building trips, Japanese company-style working culture.",
+          "Opportunities to work directly with clients in Japan."
+        ]
+      },
+      "workingTime": [
+        "Working from Monday - Friday and the last Saturday of the month, working hours 8:30 - 17:30 (8 hours/day), public holidays according to state regulations.",
+        "Floors 3 - 5, Waseco Building, No. 10 Pho Quang, Ward 02, Tan Binh District, Ho Chi Minh City."
+    ],
+      "contact": {
+        "email": "mailto:recruit@teqnological.asia"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Software Testing Engineer (QA/QC/Tester)",
+      "category": "Quality Assurance",
+      "type": "Full-time",
+      "workplace": "Onsite",
+      "postedDate": "2023-10-15",
+      "description": "Responsible for ensuring product quality through detailed testing, test case design, and continuous improvement of testing processes.",
+      "responsibilities": [
+        "Design, execute, and maintain test cases and test plans.",
+        "Perform manual and automated testing.",
+        "Collaborate with developers to analyze bugs and improve system quality."
+      ],
+      "requirements": {
+        "general": [
+          "Graduate in IT, Computer Science, or related fields.",
+          "Keen attention to detail and problem-solving mindset."
+        ],
+        "skills": [
+          "Experience with testing tools such as Postman, Selenium, JMeter.",
+          "Knowledge of SDLC and software testing methodologies.",
+          "Basic programming skills are a plus."
+        ]
+      },
+      "benefits": {
+        "compensation": [
+          "Competitive salary based on experience.",
+          "Annual performance bonus and insurance coverage."
+        ],
+        "spiritual": [
+          "Friendly and supportive working environment.",
+          "Company trips, training, and career growth opportunities."
+        ]
+      },
+      "workingTime": [
+        "Monday - Friday and the last Saturday of the month, 8:30 - 17:30 (8 hours/day)",
+        "Floor 3 - 5, Waseco Building, No. 10 Pho Quang, Ward 02, Tan Binh District, Ho Chi Minh City"
+      ],
+      "contact": {
+        "email": "mailto:recruit@teqnological.asia"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Front-end Developer (ReactJS)",
+      "category": "Engineering",
+      "type": "Full-time",
+      "workplace": "Onsite",
+      "postedDate": "2023-10-25",
+      "description": "Build high-performance front-end applications using ReactJS, collaborating closely with designers and backend developers.",
+      "responsibilities": [
+        "Develop and maintain responsive web applications.",
+        "Work with UX/UI designers to implement user-friendly interfaces.",
+        "Optimize performance and ensure cross-browser compatibility."
+      ],
+      "requirements": {
+        "general": [
+          "Bachelor’s degree in Computer Science or related fields.",
+          "1+ year experience with ReactJS or similar frameworks."
+        ],
+        "skills": [
+          "Proficiency in HTML, CSS, JavaScript (ES6+).",
+          "Experience with ReactJS, Redux, Webpack, and REST APIs.",
+          "Basic understanding of backend communication and version control (Git)."
+        ]
+      },
+      "benefits": {
+        "compensation": [
+          "Attractive salary and yearly bonus.",
+          "MacBook or personal laptop provided."
+        ],
+        "spiritual": [
+          "Flexible working environment and regular team-building events."
+        ]
+      },
+      "workingTime": [
+        "Monday - Friday and the last Saturday of the month, 8:30 - 17:30 (8 hours/day)",
+        "Floor 3 - 5, Waseco Building, No. 10 Pho Quang, Ward 02, Tan Binh District, Ho Chi Minh City"
+      ],
+      "contact": {
+        "email": "mailto:recruit@teqnological.asia"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Internship/Fresher Mobile Developer",
+      "category": "Internship",
+      "type": "Internship",
+      "workplace": "Onsite",
+      "postedDate": "2023-11-01",
+      "description": "Join our mobile team to learn and develop real-world mobile applications using Flutter or React Native.",
+      "responsibilities": [
+        "Assist in developing and maintaining mobile applications.",
+        "Collaborate with senior developers to learn modern development workflows."
+      ],
+      "requirements": {
+        "general": [
+          "Final-year student or fresh graduate in Computer Science, Software Engineering.",
+          "Basic knowledge of mobile development frameworks."
+        ],
+        "skills": [
+          "Familiar with Flutter or React Native.",
+          "Basic understanding of APIs, JSON, and Git."
+        ]
+      },
+      "benefits": {
+        "compensation": [
+          "Monthly internship allowance.",
+          "Full-time job opportunity after internship."
+        ],
+        "spiritual": [
+          "Supportive mentors and friendly working environment."
+        ]
+      },
+      "workingTime": [
+        "Monday - Friday and the last Saturday of the month, 8:30 - 17:30 (8 hours/day)",
+        "Floor 3 - 5, Waseco Building, No. 10 Pho Quang, Ward 02, Tan Binh District, Ho Chi Minh City"
+      ],
+      "contact": {
+        "email": "mailto:recruit@teqnological.asia"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Internship/Fresher Front-end Developer",
+      "category": "Internship",
+      "type": "Internship",
+      "workplace": "Onsite",
+      "postedDate": "2023-11-05",
+      "description": "Learn to build modern and responsive websites with ReactJS under the guidance of experienced developers.",
+      "responsibilities": [
+        "Assist in developing front-end applications.",
+        "Support bug fixing and UI implementation."
+      ],
+      "requirements": {
+        "general": [
+          "Final-year student or fresh graduate majoring in Computer Science or related fields.",
+          "Eager to learn front-end development."
+        ],
+        "skills": [
+          "Basic understanding of HTML, CSS, JavaScript.",
+          "Familiarity with ReactJS, Git, and responsive design principles."
+        ]
+      },
+      "benefits": {
+        "compensation": [
+          "Monthly internship allowance.",
+          "Mentorship and potential full-time offer."
+        ],
+        "spiritual": [
+          "Fun and young working environment with learning opportunities."
+        ]
+      },
+      "workingTime": [
+        "Monday - Friday and the last Saturday of the month, 8:30 - 17:30 (8 hours/day)",
+        "Floor 3 - 5, Waseco Building, No. 10 Pho Quang, Ward 02, Tan Binh District, Ho Chi Minh City"
+      ],
+      "contact": {
+        "email": "mailto:recruit@teqnological.asia"
+      }
+    }
+  ]
+}

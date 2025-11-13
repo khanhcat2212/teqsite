@@ -1,5 +1,3 @@
-import React from "react";
-
 import GridList from "@src/components/cardlist/GridList";
 import { internships } from "@src/constants/interships";
 import { vacancies } from "@src/constants/vacancies";

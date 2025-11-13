@@ -5,7 +5,7 @@ import type { InputHTMLAttributes } from "react";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
-  variant?: "primary" | "secondary" | "search" | "error";
+  variant?: "primary" | "secondary" | "search" | "error" | "area";
   error?: string;
   placeholder?: string;
 }
@@ -17,6 +17,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     const variantStyle = clsx({
       "hover:border-black focus-within:border-black": variant === "primary",
       "border border-red": variant === "error",
+      "h-[184px] hover:border-black focus-within:border-black items-start py-2":
+        variant === "area",
     });
     return (
       <div className={clsx(baseStyle, variantStyle, className)}>
