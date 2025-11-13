@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import { navs } from "@src/constants/navs";
 import { socials } from "@src/constants/socials";
 import { useNavContext } from "@src/contexts/NavContext";
-import { Link, useRouterState } from "@tanstack/react-router";
+import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
 
 import Button from "../button/Button";
 
@@ -14,11 +14,17 @@ const Header: React.FC = () => {
   const isMd = useMediaQuery({ minWidth: 768 });
   const { activeNav } = useNavContext();
   const { location } = useRouterState();
+  const navigate = useNavigate();
 
   return (
     <nav className="w-screen">
       <div className="h-17.25 xl:h-25 flex items-center justify-between px-8 xl:px-12 bg-white-400">
-        <img src="/logo.svg" className="h-[50%]" alt="teq_logo" />
+        <img
+          onClick={() => navigate({ to: "/" })}
+          src="/logo.svg"
+          className="h-[50%] cursor-pointer"
+          alt="teq_logo"
+        />
 
         <div className="hidden xl:flex items-center gap-18">
           <ul className="flex space-x-13 text-[1rem] font-medium text-grey">

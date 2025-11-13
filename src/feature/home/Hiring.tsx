@@ -5,12 +5,15 @@ import Button from "@src/components/button/Button";
 import RowCard from "@src/components/card/RowCard";
 import { timelines } from "@src/constants/timelines";
 import { vacancies } from "@src/constants/vacancies";
+import { useNavigate } from "@tanstack/react-router";
 
 import Timeline from "./Timeline";
 
 const Hiring: React.FC = () => {
   const isLg = useMediaQuery({ minWidth: 1024 });
   const isMd = useMediaQuery({ minWidth: 768 });
+
+  const naviagte = useNavigate();
 
   const hirings = vacancies.slice(0, 3);
   return (
@@ -22,7 +25,11 @@ const Hiring: React.FC = () => {
         Become a part of our team and build your bright future
       </p>
 
-      <Button variant="primary" size={isLg ? "lg" : isMd ? "md" : "sm"}>
+      <Button
+        onClick={() => naviagte({ to: "/careers" })}
+        variant="primary"
+        size={isLg ? "lg" : isMd ? "md" : "sm"}
+      >
         JOIN US
       </Button>
 

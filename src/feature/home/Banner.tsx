@@ -2,9 +2,11 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 import Button from "@src/components/button/Button";
+import { useNavigate } from "@tanstack/react-router";
 
 const Banner: React.FC = () => {
   const isMd = useMediaQuery({ minWidth: 768 });
+  const navigate = useNavigate();
   return (
     <div>
       <div className="flex flex-col w-full">
@@ -49,6 +51,7 @@ const Banner: React.FC = () => {
               variant="primary"
               size="lg"
               className="mt-11 hidden lg:block"
+              onClick={() => navigate({ to: "/about" })}
             >
               ABOUT US
             </Button>

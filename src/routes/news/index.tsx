@@ -1,3 +1,5 @@
+import { useMemo, useState } from "react";
+
 import NewsList from "@src/components/cardlist/NewsList";
 import Input from "@src/components/input/Input";
 import { news } from "@src/constants/news";
@@ -8,6 +10,23 @@ export const Route = createFileRoute("/news/")({
 });
 
 function RouteComponent() {
+  const [keyword, setKeyword] = useState("");
+
+  const filteredNews = useMemo(() => {
+    const search = keyword.trim().toLowerCase();
+    if (!search) return news;
+
+    return news.filter((item) => {
+      const titleMatch = item.title
+        ? item.title.toLowerCase().includes(search)
+        : false;
+      const descMatch = item.description
+        ? item.description.toLowerCase().includes(search)
+        : false;
+      return titleMatch || descMatch;
+    });
+  }, [keyword]);
+
   return (
     <>
       <div className="w-full h-54 flex flex-col items-center gap-8">
@@ -15,12 +34,17 @@ function RouteComponent() {
           All News
         </p>
         <div className="w-[80%] max-w-141">
-          <Input variant="search" placeholder="Search" />
+          <Input
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+            variant="search"
+            placeholder="Search"
+          />
         </div>
       </div>
 
       <div className="w-full flex items-center justify-center pb-24">
-        <NewsList cards={news} />
+        <NewsList cards={filteredNews} />
       </div>
     </>
   );

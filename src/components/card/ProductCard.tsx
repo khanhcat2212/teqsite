@@ -21,7 +21,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
         isActive && "bg-white-300"
       )}
     >
-      <img src={image} className="h-6.75 w-auto max-w-9.25 object-cover" />
+      <img
+        src={image}
+        className="h-6.75 w-auto max-w-9.25 object-cover"
+        alt={title}
+      />
       <p
         className={clsx(
           "text-[1.125rem] mt-3",

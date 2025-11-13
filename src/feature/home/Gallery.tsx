@@ -3,10 +3,12 @@ import { useMediaQuery } from "react-responsive";
 
 import Button from "@src/components/button/Button";
 import { galleryPreviews } from "@src/constants/galleryPreviews";
+import { useNavigate } from "@tanstack/react-router";
 
 const Gallery: React.FC = () => {
   const isLg = useMediaQuery({ minWidth: 1024 });
   const isMd = useMediaQuery({ minWidth: 768 });
+  const navigate = useNavigate();
   const previews = galleryPreviews.slice(0, isLg ? 8 : isMd ? 4 : 2);
   return (
     <div className="flex flex-col items-center lg:justify-center py-12 lg:py-16 px-4">
@@ -33,6 +35,7 @@ const Gallery: React.FC = () => {
       </div>
 
       <Button
+        onClick={() => navigate({ to: "/gallery" })}
         variant="primary"
         size={isLg ? "lg" : isMd ? "md" : "sm"}
         className="mb-4"

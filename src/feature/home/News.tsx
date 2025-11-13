@@ -4,10 +4,14 @@ import { useMediaQuery } from "react-responsive";
 import Button from "@src/components/button/Button";
 import NewsList from "@src/components/cardlist/NewsList";
 import { news } from "@src/constants/news";
+import { useNavigate } from "@tanstack/react-router";
 
 const News: React.FC = () => {
   const isLg = useMediaQuery({ minWidth: 1024 });
   const isMd = useMediaQuery({ minWidth: 768 });
+
+  const navigate = useNavigate();
+
   const previews = isLg
     ? news.slice(0, 3)
     : isMd
@@ -24,7 +28,11 @@ const News: React.FC = () => {
         <NewsList cards={previews} />
       </div>
 
-      <Button variant="primary" size={isLg ? "lg" : isMd ? "md" : "sm"}>
+      <Button
+        onClick={() => navigate({ to: "/news" })}
+        variant="primary"
+        size={isLg ? "lg" : isMd ? "md" : "sm"}
+      >
         READ MORE
       </Button>
     </div>

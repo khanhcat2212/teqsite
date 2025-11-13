@@ -73,9 +73,7 @@ const Form: React.FC<FormProps> = ({ onSuccess }) => {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log("submit data:", data);
-    console.log("errors:", errors);
+  const onSubmit = () => {
     if (onSuccess) onSuccess();
   };
 
