@@ -1,10 +1,15 @@
 import React from "react";
 
 import type { Card } from "@src/interfaces/card";
+import { useNavigate } from "@tanstack/react-router";
 
-const NewsCard: React.FC<Card> = ({ title, image, description }) => {
+const NewsCard: React.FC<Card> = ({ id, title, image, description }) => {
+  const navigate = useNavigate();
   return (
-    <div className="max-w-100 max-h-93.5 p-1.5 w-full h-full rounded-md border border-grey-100 hover:border-black flex items-center justify-center hover:scale-[1.03] transition-transform duration-300 ease-in-out bg-grey-900 cursor-pointer">
+    <div
+      onClick={() => navigate({ to: `/news/${id}` })}
+      className="max-w-100 max-h-93.5 p-1.5 w-full h-full rounded-md border border-grey-100 hover:border-black flex items-center justify-center hover:scale-[1.03] transition-transform duration-300 ease-in-out bg-grey-900 cursor-pointer"
+    >
       <div className="max-w-97.5 max-h-90.5 w-full h-full rounded-md bg-white overflow-hidden">
         <img
           src={image}

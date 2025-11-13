@@ -9,17 +9,13 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as NewsRouteImport } from './routes/news'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as NewsIndexRouteImport } from './routes/news/index'
 import { Route as CareersIndexRouteImport } from './routes/careers/index'
+import { Route as NewsIdRouteImport } from './routes/news/$id'
 import { Route as CareersIdRouteImport } from './routes/careers/$id'
 
-const NewsRoute = NewsRouteImport.update({
-  id: '/news',
-  path: '/news',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -30,9 +26,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NewsIndexRoute = NewsIndexRouteImport.update({
+  id: '/news/',
+  path: '/news/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CareersIndexRoute = CareersIndexRouteImport.update({
   id: '/careers/',
   path: '/careers/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsIdRoute = NewsIdRouteImport.update({
+  id: '/news/$id',
+  path: '/news/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CareersIdRoute = CareersIdRouteImport.update({
@@ -44,50 +50,60 @@ const CareersIdRoute = CareersIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/news': typeof NewsRoute
   '/careers/$id': typeof CareersIdRoute
+  '/news/$id': typeof NewsIdRoute
   '/careers': typeof CareersIndexRoute
+  '/news': typeof NewsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/news': typeof NewsRoute
   '/careers/$id': typeof CareersIdRoute
+  '/news/$id': typeof NewsIdRoute
   '/careers': typeof CareersIndexRoute
+  '/news': typeof NewsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/news': typeof NewsRoute
   '/careers/$id': typeof CareersIdRoute
+  '/news/$id': typeof NewsIdRoute
   '/careers/': typeof CareersIndexRoute
+  '/news/': typeof NewsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/news' | '/careers/$id' | '/careers'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/careers/$id'
+    | '/news/$id'
+    | '/careers'
+    | '/news'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/news' | '/careers/$id' | '/careers'
-  id: '__root__' | '/' | '/about' | '/news' | '/careers/$id' | '/careers/'
+  to: '/' | '/about' | '/careers/$id' | '/news/$id' | '/careers' | '/news'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/careers/$id'
+    | '/news/$id'
+    | '/careers/'
+    | '/news/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  NewsRoute: typeof NewsRoute
   CareersIdRoute: typeof CareersIdRoute
+  NewsIdRoute: typeof NewsIdRoute
   CareersIndexRoute: typeof CareersIndexRoute
+  NewsIndexRoute: typeof NewsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/news': {
-      id: '/news'
-      path: '/news'
-      fullPath: '/news'
-      preLoaderRoute: typeof NewsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -102,11 +118,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/news/': {
+      id: '/news/'
+      path: '/news'
+      fullPath: '/news'
+      preLoaderRoute: typeof NewsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/careers/': {
       id: '/careers/'
       path: '/careers'
       fullPath: '/careers'
       preLoaderRoute: typeof CareersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news/$id': {
+      id: '/news/$id'
+      path: '/news/$id'
+      fullPath: '/news/$id'
+      preLoaderRoute: typeof NewsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/careers/$id': {
@@ -122,9 +152,10 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  NewsRoute: NewsRoute,
   CareersIdRoute: CareersIdRoute,
+  NewsIdRoute: NewsIdRoute,
   CareersIndexRoute: CareersIndexRoute,
+  NewsIndexRoute: NewsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

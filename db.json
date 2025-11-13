@@ -250,5 +250,43 @@
         "email": "mailto:recruit@teqnological.asia"
       }
     }
+  ],
+  "news": [
+    {
+        "id": "1",
+        "title": "Happy international women’s day!",
+        "readtime": "5 mins read",
+        "postedDate": "15/03/2023"
+    },
+    {
+        "id": "2",
+        "title": "Happy international women’s day!",
+        "readtime": "5 mins read",
+        "postedDate": "15/03/2023"
+    },
+    {
+        "id": "3",
+        "title": "Happy international women’s day!",
+        "readtime": "5 mins read",
+        "postedDate": "15/03/2023"
+    },
+    {
+        "id": "4",
+        "title": "Happy international women’s day!",
+        "readtime": "5 mins read",
+        "postedDate": "15/03/2023"
+    },
+    {
+        "id": "5",
+        "title": "Happy international women’s day!",
+        "readtime": "5 mins read",
+        "postedDate": "15/03/2023"
+    },
+    {
+        "id": "6",
+        "title": "Happy international women’s day!",
+        "readtime": "5 mins read",
+        "postedDate": "15/03/2023"
+    }
   ]
 }
