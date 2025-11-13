@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as CareersRouteImport } from './routes/careers'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as IndexRouteImport } from './routes/index'
 
 const CareersRoute = CareersRouteImport.update({
   id: '/careers',
@@ -22,29 +23,38 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
+  '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/careers': typeof CareersRoute
 }
 export interface FileRoutesByTo {
+  '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/careers': typeof CareersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/careers': typeof CareersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/about' | '/careers'
+  fullPaths: '/' | '/about' | '/careers'
   fileRoutesByTo: FileRoutesByTo
-  to: '/about' | '/careers'
-  id: '__root__' | '/about' | '/careers'
+  to: '/' | '/about' | '/careers'
+  id: '__root__' | '/' | '/about' | '/careers'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
+  IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   CareersRoute: typeof CareersRoute
 }
@@ -65,10 +75,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   CareersRoute: CareersRoute,
 }

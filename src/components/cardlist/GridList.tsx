@@ -13,9 +13,15 @@ interface AboutListProps {
   cards: Card[];
   subject?: string;
   variant: "capability" | "team" | "row" | "jd";
+  rowCardVariant?: "primary" | "secondary";
 }
 
-const GridList: React.FC<AboutListProps> = ({ cards, subject, variant }) => {
+const GridList: React.FC<AboutListProps> = ({
+  cards,
+  subject,
+  variant,
+  rowCardVariant,
+}) => {
   return (
     <div className="flex flex-col justify-center items-center w-full">
       <div
@@ -38,7 +44,11 @@ const GridList: React.FC<AboutListProps> = ({ cards, subject, variant }) => {
             ) : variant === "team" ? (
               <TeamCard key={index} {...card} />
             ) : variant === "row" ? (
-              <RowCard key={index} {...card} />
+              <RowCard
+                key={index}
+                {...card}
+                variant={rowCardVariant || "primary"}
+              />
             ) : (
               <DescriptionCard key={index} {...card} />
             )
