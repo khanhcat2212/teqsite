@@ -3,7 +3,8 @@ import { useMediaQuery } from "react-responsive";
 
 import { navs } from "@src/constants/navs";
 import { socials } from "@src/constants/socials";
-import { Link } from "@tanstack/react-router";
+import { useNavContext } from "@src/contexts/NavContext";
+import { Link, useRouterState } from "@tanstack/react-router";
 
 import Button from "../button/Button";
 
@@ -11,6 +12,8 @@ const Header: React.FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const isLg = useMediaQuery({ minWidth: 1024 });
   const isMd = useMediaQuery({ minWidth: 768 });
+  const { activeNav } = useNavContext();
+  const { location } = useRouterState();
 
   return (
     <nav className="w-screen">
@@ -19,17 +22,23 @@ const Header: React.FC = () => {
 
         <div className="hidden xl:flex items-center gap-18">
           <ul className="flex space-x-13 text-[1rem] font-medium text-grey">
-            {navs.map((nav, index) => (
-              <li key={index} className="relative group">
-                <Link
-                  to={nav.url}
-                  className="py-1 hover:text-black hover:font-bold"
-                >
-                  {nav.label}
-                </Link>
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
-              </li>
-            ))}
+            {navs.map((nav, index) => {
+              const isActive =
+                activeNav?.url === nav.url || location.pathname === nav.url;
+              return (
+                <li key={index} className="relative group">
+                  <Link
+                    to={nav.url}
+                    className={`py-1 transition-all ${
+                      isActive ? "text-black font-bold" : "hover:text-black"
+                    }`}
+                  >
+                    {nav.label}
+                  </Link>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+              );
+            })}
           </ul>
           <Button variant="primary" size={isLg ? "md" : "sm"}>
             <Link to="/contact">CONTACT US</Link>
