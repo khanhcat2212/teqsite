@@ -32,7 +32,7 @@ const Header: React.FC = () => {
             ))}
           </ul>
           <Button variant="primary" size={isLg ? "md" : "sm"}>
-            CONTACT US
+            <Link to="/contact">CONTACT US</Link>
           </Button>
         </div>
 
